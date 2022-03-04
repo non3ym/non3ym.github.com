@@ -2,14 +2,46 @@
 <html lang="pl">
 
 <head>
-	<title>Idk YET</title>
+	<title>Naruto</title>
 	<meta charset="utf-8">
 	<link href="css/visuals.css" type="text/css" rel="stylesheet"/>
-	<script src="js/script.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+	<script src="js/script.js clock.js" type="text/javascript"></script>
+    <script src="js/clock.js" type="text/javascript"></script>
+    <script src="js/date.js" type="text/javascript"></script>
+    <script src="js/queue.js" type="text/javascript"></script>
+    <script src="js/dark_theme.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="loading()">
 
+    <div id="container">
+        
+        <div id="header">
+          
+            <div id="light_mode_icon"><img id="light_icon" src="img/light_mode.jpg"/></div>
+            
+            <div id="middle_header">Title</div>
+            
+            <div id="right_side_header">
+                <div id="today" style="height: 20px; margin-bottom: 2px;"></div>
+                <div id="timer" style="height: 20px; font-size: 15px;"></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        
+    </div>
+    
+    <script>
+        var icon = document.getElementById("light_icon");
+
+        icon.onclick = function()
+        {
+            document.body.classList.toogle("lightmodee");
+        }
+    </script>
+    
 </body>
 
 </html>

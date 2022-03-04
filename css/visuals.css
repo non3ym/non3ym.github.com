@@ -1,4 +1,56 @@
 body
 {
-	background-color: gray;
+	background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+}
+:root
+{
+    --primary-color: #1c1c1a;
+    --secondary-color: #f0f0ed;
+}
+.lightmodee
+{
+    --primary-color: #f0f0ed;
+    --secondary-color: #1c1c1a;   
+}
+
+#container
+{
+    margin: auto;
+    width: 1200px;
+    height: 800px;
+    background: var(--primary-color);
+}
+#header
+{
+    height: 50px;
+    width: 100%;
+    border-bottom: 3px solid var(--secondary-color);
+}
+#light_icon
+{
+    height: 50px;
+    cursor: pointer;
+}
+#light_mode_icon
+{
+    float: left;
+    width: 50px;
+}
+#middle_header
+{
+    width: 850px;
+    float: left;
+    font-size: 35px;
+    text-align: center;
+    padding: 0px 5px 5px 100px;
+}
+right_side_header
+{
+    width: 225px;
+    font-size: 5px;
+    float: left;
+    text-align: center;
+    padding-left: 25px;
 }
