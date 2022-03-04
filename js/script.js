@@ -1,0 +1,1 @@
+confirm("Are you sure about visiting the site?");
